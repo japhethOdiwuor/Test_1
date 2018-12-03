@@ -24,7 +24,7 @@ public class Login {
 	public static String username;
 	public static String password;
 
-	WebDriver driver;
+	public static WebDriver driver;
 
 	@Test(priority = 1)
 	public void openBrowser() throws InterruptedException, IOException {
@@ -84,13 +84,17 @@ public class Login {
 	public void verifyLogin() throws InterruptedException {
 
 		Thread.sleep(2000);
-		String tempText = driver.findElement(By.xpath("//span[contains(.,'Electronics')]")).getText().trim();
+		String tempText = driver.findElement(By.xpath("//span[contains(.,'Offer Zone')]")).getText().trim();
 
-		if (tempText.matches("Electronics")) {
+		if (tempText.matches("Offer Zone")) {
+			System.out.println("----------------------");
 			System.out.println("Login Successful");
+			System.out.println("----------------------");
 
 		} else {
+			System.out.println("----------------------");
 			System.out.println("Login Failed");
+			System.out.println("----------------------");
 		}
 
 	}
