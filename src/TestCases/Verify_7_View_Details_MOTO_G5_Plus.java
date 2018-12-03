@@ -22,7 +22,7 @@ public class Verify_7_View_Details_MOTO_G5_Plus extends Verify_5_Select_BRAND_MO
 	public void GetURL_Phone() throws InterruptedException {
 		System.out.println("-----------------------------");
 		WebElement link = driver.findElement(
-				By.xpath(".//*[@id='container']/div/div[1]/div[2]/div/div[1]/div[2]/div[2]/div/div/div/a"));
+				By.xpath("//*[@id='container']/div/div[1]/div[2]/div/div[1]/div[2]/div[2]/div/div/div/a"));
 		Linkurl = link.getAttribute("href");
 		System.out.println("Link URL =>" + Linkurl);
 		System.out.println("-----------------------------");
@@ -47,7 +47,7 @@ public class Verify_7_View_Details_MOTO_G5_Plus extends Verify_5_Select_BRAND_MO
 			System.out.println("Failed NAVIGATION as Button *BUY NOW* is NOT Present on Page");
 			System.out.println("-----------------------------");
 		}
-		Thread.sleep(2000);
+		
 
 	}
 }
