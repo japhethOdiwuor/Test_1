@@ -12,7 +12,7 @@ public class Verify_5_Select_BRAND_MOTOROLA extends Verify_4_Search_BRAND_MOTO {
 	public void click_MOTOROLA_brand() throws InterruptedException {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//div/section[5]//label[contains(.,'Motorola')]")).click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 
 	}
 
