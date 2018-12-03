@@ -3,22 +3,12 @@ package TestCases;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import LoginTest.Login;
+public class Verify_Select_BRAND_MOTOROLA extends Verify_Search_BRAND_MOTO {
 
-public class Verify_Select_BRAND_MOTOROLA extends Login {
-
-	String Search_Input = "Brand Moto";
+	
 	String Search_Result = "Moto";
 
 	@Test(priority = 11)
-	public void search_BRAND_Moto() throws InterruptedException {
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//input[@type='text']")).sendKeys(Search_Input);
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
-	}
-
-	@Test(priority = 12)
 	public void click_MOTOROLA_brand() throws InterruptedException {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//div/section[5]//label[contains(.,'Motorola')]")).click();
