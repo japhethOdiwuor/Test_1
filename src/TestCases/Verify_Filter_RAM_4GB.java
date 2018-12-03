@@ -5,12 +5,12 @@ import org.testng.annotations.Test;
 
 import LoginTest.Login;
 
-public class Verify_Search_RAM_4GB extends Login {
+public class Verify_Filter_RAM_4GB extends Login {
 
-	String Search_Input = "4 GB RAM";
+	String Search_Input = "Mobile Phones";
 
 	@Test(priority = 7)
-	public void search_RAM_Size() throws InterruptedException {
+	public void search_MOBILE() throws InterruptedException {
 
 		driver.findElement(By.xpath("//input[@type='text']")).sendKeys(Search_Input);
 		Thread.sleep(1000);
@@ -18,6 +18,14 @@ public class Verify_Search_RAM_4GB extends Login {
 	}
 
 	@Test(priority = 8)
+	public void selecth_RAM_Size() throws InterruptedException {
+
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//div/section[4]//label[contains(.,'4 GB')]")).click();
+		Thread.sleep(2000);
+	}
+
+	@Test(priority = 9)
 	public void verify_ReturnedResults() throws InterruptedException {
 		Thread.sleep(2000);
 		for (int resultNo = 1; resultNo <= 2; resultNo++) {

@@ -3,21 +3,19 @@ package TestCases;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import LoginTest.Login;
+public class Verify_Search_BRAND_MOTO extends Verify_Filter_RAM_4GB {
 
-public class Verify_Search_BRAND_MOTO extends Login {
-
-	String Search_Input = "Brand Moto";
-
-	@Test(priority = 9)
-	public void search_BRAND_Moto() throws InterruptedException {
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//input[@type='text']")).sendKeys(Search_Input);
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
-	}
+	String Search_Input = "Moto";
 
 	@Test(priority = 10)
+	public void search_BRAND_Moto() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@placeholder='Search Brand']")).sendKeys(Search_Input);
+		Thread.sleep(1000);
+		
+	}
+
+	@Test(priority = 11)
 	public void verify_ReturnedResults() throws InterruptedException {
 		Thread.sleep(2000);
 		String Brand_Section = driver.findElement(By.xpath("//*[@id='container']//div/section[5]")).getText();

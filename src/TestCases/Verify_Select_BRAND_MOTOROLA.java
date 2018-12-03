@@ -8,7 +8,7 @@ public class Verify_Select_BRAND_MOTOROLA extends Verify_Search_BRAND_MOTO {
 	
 	String Search_Result = "Moto";
 
-	@Test(priority = 11)
+	@Test(priority = 12)
 	public void click_MOTOROLA_brand() throws InterruptedException {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//div/section[5]//label[contains(.,'Motorola')]")).click();
