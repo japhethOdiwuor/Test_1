@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import LoginTest.Login;
 
-public class Verify_Navigate_HomePage extends Login {
+public class Verify_1_Navigate_HomePage extends Login {
 
 	@Test(priority = 4)
 	public void verify_Electronics_On_HomePage() {

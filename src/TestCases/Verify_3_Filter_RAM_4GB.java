@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import LoginTest.Login;
 
-public class Verify_Filter_RAM_4GB extends Login {
+public class Verify_3_Filter_RAM_4GB extends Login {
 
 	String Search_Input = "Mobile Phones";
 

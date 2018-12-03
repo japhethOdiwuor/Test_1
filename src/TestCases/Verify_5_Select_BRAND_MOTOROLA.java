@@ -3,7 +3,7 @@ package TestCases;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-public class Verify_Select_BRAND_MOTOROLA extends Verify_Search_BRAND_MOTO {
+public class Verify_5_Select_BRAND_MOTOROLA extends Verify_4_Search_BRAND_MOTO {
 
 	
 	String Search_Result = "Moto";

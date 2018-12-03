@@ -3,7 +3,7 @@ package TestCases;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-public class Verify_Search_BRAND_MOTO extends Verify_Filter_RAM_4GB {
+public class Verify_4_Search_BRAND_MOTO extends Verify_3_Filter_RAM_4GB {
 
 	String Search_Input = "Moto";
 

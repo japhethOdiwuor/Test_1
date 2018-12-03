@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import LoginTest.Login;
 
-public class Verify_Navigate_Mobile_HomePage extends Login {
+public class Verify_2_Navigate_Mobile_HomePage extends Login {
 
 	public static String homePAGEURL;
 	public static String mobilePAGEURL;
