@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Flip Cart Tests">
+	<test name="Verify- Select BRAND Motorola" verbose="2">
+		<classes>
+			<class name="TestCases.Verify_5_Select_BRAND_MOTOROLA" />
+
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
